@@ -3,7 +3,7 @@ const currentImports = {};
       let moduleMap = {
 "./TaskWidget":()=>{
       dynamicLoadingCss(["style-BkVPOUSY.css"], false, './TaskWidget');
-      return __federation_import('https://erickcguz.github.io/mfe-vue-tasks/dist/assets/__federation_expose_TaskWidget-BsBkiwMU.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('https://hoizard.github.io/mfe-vue-tasks/dist/assets/__federation_expose_TaskWidget-BsBkiwMU.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
       const seen = {};
       const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
         const metaUrl = import.meta.url;
@@ -13,7 +13,7 @@ const currentImports = {};
         }
 
         const curUrl = metaUrl.substring(0, metaUrl.lastIndexOf('remoteEntry.js'));
-        const base = 'https://erickcguz.github.io/mfe-vue-tasks/dist/';
+        const base = 'https://hoizard.github.io/mfe-vue-tasks/dist/';
         'assets';
 
         cssFilePaths.forEach(cssPath => {
