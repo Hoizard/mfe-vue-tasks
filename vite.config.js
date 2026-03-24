@@ -18,7 +18,7 @@ export default defineConfig({
     target: "esnext",
     minify: false,
     cssCodeSplit: false,
+    outDir: "dist",
   },
-  // Change 'erickcguz' to your actual GitHub username
   base: "https://hoizard.github.io/mfe-vue-tasks/dist/",
 });
