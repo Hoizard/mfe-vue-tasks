@@ -1,5 +1,5 @@
 import { importShared } from './__federation_fn_import-D_yqrOin.js';
-import TaskWidget from './__federation_expose_TaskWidget-BsBkiwMU.js';
+import TaskWidget from './__federation_expose_TaskWidget-CrQffZc6.js';
 
 true&&(function polyfill() {
   const relList = document.createElement("link").relList;
@@ -41,4 +41,4 @@ true&&(function polyfill() {
 
 // Local dev preview only — the shell imports TaskWidget directly via Module Federation
 const {createApp} = await importShared('vue');
-createApp(TaskWidget).mount('#app');
+createApp(TaskWidget).mount("#app");

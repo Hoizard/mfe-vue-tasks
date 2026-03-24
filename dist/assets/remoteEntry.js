@@ -2,8 +2,8 @@ const currentImports = {};
       const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
       let moduleMap = {
 "./TaskWidget":()=>{
-      dynamicLoadingCss(["style-BkVPOUSY.css"], false, './TaskWidget');
-      return __federation_import('https://hoizard.github.io/mfe-vue-tasks/dist/assets/__federation_expose_TaskWidget-BsBkiwMU.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      dynamicLoadingCss(["style-CyGZEXgF.css"], false, './TaskWidget');
+      return __federation_import('https://hoizard.github.io/mfe-vue-tasks/dist/assets/__federation_expose_TaskWidget-CrQffZc6.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
       const seen = {};
       const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
         const metaUrl = import.meta.url;

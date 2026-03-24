@@ -31,25 +31,25 @@ const _sfc_main = {
   __name: 'TaskWidget',
   setup(__props) {
 
-const newTask = ref('');
+const newTask = ref("");
 const tasks = ref([
-  { id: 1, text: 'Deploy to AWS with Docker', done: false },
-  { id: 2, text: 'Set up GitHub Actions CI/CD', done: true },
-  { id: 3, text: 'Add Prometheus monitoring', done: false },
+  { id: 1, text: "Deploy to AWS with Docker", done: false },
+  { id: 2, text: "Set up GitHub Actions CI/CD", done: true },
+  { id: 3, text: "Add Prometheus monitoring", done: false },
 ]);
 let nextId = 4;
 
-const done = computed(() => tasks.value.filter(t => t.done).length);
+const done = computed(() => tasks.value.filter((t) => t.done).length);
 
 function addTask() {
   const text = newTask.value.trim();
-  if (!text) return
+  if (!text) return;
   tasks.value.unshift({ id: nextId++, text, done: false });
-  newTask.value = '';
+  newTask.value = "";
 }
 
 function remove(id) {
-  tasks.value = tasks.value.filter(t => t.id !== id);
+  tasks.value = tasks.value.filter((t) => t.id !== id);
 }
 
 return (_ctx, _cache) => {
@@ -87,7 +87,7 @@ return (_ctx, _cache) => {
           _createElementVNode("div", {
             class: "t-check",
             onClick: $event => (t.done = !t.done)
-          }, _toDisplayString(t.done ? '✓' : ''), 9, _hoisted_5),
+          }, _toDisplayString(t.done ? "✓" : ""), 9, _hoisted_5),
           _createElementVNode("span", _hoisted_6, _toDisplayString(t.text), 1),
           _createElementVNode("span", {
             class: "t-del",
@@ -104,6 +104,6 @@ return (_ctx, _cache) => {
 }
 
 };
-const TaskWidget = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-63136e3b"]]);
+const TaskWidget = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-1778c381"]]);
 
 export { TaskWidget as default };
